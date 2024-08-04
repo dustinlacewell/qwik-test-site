@@ -6,5 +6,8 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
   output: "static",
   base: "/demo-template/",
-  integrations: [qwik({ include: "src/components/*" }), react()],
+  integrations: [
+    qwik({ include: "src/components/qwik/*" }),
+    react({ include: "src/components/react/*" }),
+  ],
 });

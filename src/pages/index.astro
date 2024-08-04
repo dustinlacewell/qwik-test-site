@@ -1,7 +1,9 @@
 ---
+import CanvasTest from "@components/react/CanvasTest";
 import astroLogo from "../assets/astro.svg?url";
 import qwikLogo from "../assets/qwik.svg?url";
-import { LocalCounter } from "../components/counter.tsx";
+
+import { LocalCounter } from "@components/qwik/counter";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -23,6 +25,7 @@ import Layout from "../layouts/Layout.astro";
       Thanks to <a href="https://github.com/QwikDev/astro" title="@QwikDev/astro integration">@QwikDev/astro</a>, seamlessly integrate your Qwik components into your Astro project, as shown with the counter below.
     </p>
     <LocalCounter />
+    <CanvasTest client:visible />
     <p class="read-the-docs">
       Click on the Qwik and Astro logos to learn more
     </p>
